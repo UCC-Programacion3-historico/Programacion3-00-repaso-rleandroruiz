@@ -1,6 +1,6 @@
 #include "Geometria.h"
 
-Geometria::Geometria(int al, int anc){
+Geometria::Geometria(float al, float anc){
     alto = al;
     ancho = anc;
 }
@@ -21,10 +21,10 @@ void Geometria::setAncho(float ancho) {
     Geometria::ancho = ancho;
 }
 
-const Color &Geometria::getCol() const {
-    return col;
+uint32_t Geometria::getCol() {
+    return col.getColor();
 }
 
-void Geometria::setCol(const Color &col) {
-    Geometria::col = col;
+void Geometria::setCol(uint8_t r, uint8_t v, uint8_t a) {
+    col.tenirColor(r, v, a);
 }

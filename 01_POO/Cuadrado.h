@@ -1,11 +1,15 @@
 #ifndef REPASO_CUADRADO_H
 #define REPASO_CUADRADO_H
 
-#include "Geometria.cpp"
+#include "Geometria.h"
 
 class Cuadrado: public Geometria{
 public:
     float getDiagonal();
+
+    float getSuperficie();
+
+    float getPerimetro();
 };
 
 

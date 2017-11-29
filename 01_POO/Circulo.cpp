@@ -1,14 +1,18 @@
 #include "Circulo.h"
 
-virtual float getSuperficie(){
+float Circulo::getSuperficie(){
     return 3.14 * radio * radio;
 }
 
-virtual float getPerimetro() {
+float Circulo::getPerimetro() {
     return 3.14 * 2 * radio;
 }
 
-float getRadio(){
+float Circulo::getRadio(){
     return radio;
 }
 
+void Circulo::setRadio(float r) {
+
+    radio = r;
+}

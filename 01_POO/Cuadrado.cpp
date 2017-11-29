@@ -1,5 +1,5 @@
 #include "Cuadrado.h"
-#include <math.h>
+
 
 float Cuadrado::getSuperficie(){
     return alto * ancho;
@@ -12,6 +12,6 @@ float Cuadrado::getPerimetro(){
 float Cuadrado::getDiagonal(){
     float d;
     d = alto * alto + ancho * ancho;
-    d = sqrt(d)
+    d = sqrt(d);
     return d;
 }

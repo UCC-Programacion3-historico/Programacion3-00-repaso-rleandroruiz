@@ -3,12 +3,19 @@
 
 #include "Geometria.h"
 
-class Triangulo {
+class Triangulo: public Geometria {
 private:
     float angulo;
 
 public:
+
     float getAngulo();
+
+   void setAngulo(float ang);
+
+    float getSuperficie();
+
+    float getPerimetro();
 };
 
 

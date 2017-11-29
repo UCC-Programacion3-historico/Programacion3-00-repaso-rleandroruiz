@@ -1,13 +1,18 @@
 #include "Triangulo.h"
 
-virtual float getSuperficie(){
+float Triangulo::getSuperficie(){
     return alto * ancho / 2;
 }
 
-virtual float getPerimetro(){
+float Triangulo::getPerimetro(){
 
 }
 
-float getAngulo(){
+float Triangulo::getAngulo(){
     return angulo;
+}
+
+void Triangulo::setAngulo(float ang) {
+
+    angulo = ang;
 }

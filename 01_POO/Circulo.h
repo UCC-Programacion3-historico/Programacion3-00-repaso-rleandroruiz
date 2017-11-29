@@ -3,12 +3,18 @@
 
 #include "Geometria.h"
 
-class Circulo {
+class Circulo: public Geometria {
 private:
     float radio;
 
 public:
     float getRadio();
+
+    void setRadio(float r);
+
+    float getSuperficie();
+
+    float getPerimetro();
 };
 
 

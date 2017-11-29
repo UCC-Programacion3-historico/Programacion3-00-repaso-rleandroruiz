@@ -2,6 +2,7 @@
 #define REPASO_GEOMETRIA_H
 
 #include "Color.h"
+#include <math.h>
 
 class Geometria {
 protected:
@@ -11,9 +12,9 @@ protected:
 public:
     Color col;
 
-    Geometria(int, int);
+    Geometria(float, float);
 
-    Geometria();
+    Geometria(){};
 
     float getAlto() const;
 
@@ -23,11 +24,12 @@ public:
 
     void setAncho(float ancho);
 
-    const Color &getCol() const;
+    uint32_t getCol();
 
-    void setCol(const Color &col);
+    void setCol(uint8_t r, uint8_t v, uint8_t a);
 
     virtual float getSuperficie() = 0;
+
     virtual float getPerimetro() = 0;
 };
 
